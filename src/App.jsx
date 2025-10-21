@@ -1,7 +1,11 @@
+import Nav from "./assets/components/Nav";
+
 const App = () => {
   return (
     <>
-      <div></div>
+      <div>
+        <Nav />
+      </div>
     </>
   );
 };
