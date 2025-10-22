@@ -9,7 +9,7 @@ const Produk = () => {
   const ProductCard = ({ name, price, image }) => {
     return (
       <>
-        <div className="p-2.5 m-2.5 flex mx-auto flex-col shadow-lg bg-white">
+        <div className="p-2.5 m-2.5 flex mx-auto flex-col shadow-lg bg-white w-[80%] md:w-full ">
           <div className="flex justify-center">
             <img
               src={image}
@@ -31,9 +31,12 @@ const Produk = () => {
   };
   return (
     <>
-      <section id="produk" className="md:min-h-screen scroll-mt-[200px]">
+      <section
+        id="produk"
+        className="md:min-h-screen scroll-mt-[100px] bg-[#FAFBFA]"
+      >
         <div className="container mx-auto">
-          <div className="flex flex-col items-center mt-10">
+          <div className="flex flex-col items-center py-32">
             <div className="flex gap-2 items-center text-center mb-4">
               <h1 className="font-bold text-2xl md:text-4xl">Menu Kami</h1>
               <Leaf color="#98c383" />
@@ -42,7 +45,7 @@ const Produk = () => {
               Matcha fresh, dibuat langsung hari ini. Tinggal pilih vibes kamu:
               creamy, manis, atau yang segerrr banget.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 md:max-w-[75%] gap-3 ">
+            <div className="grid grid-cols-1 w-full md:grid-cols-3 md:max-w-[75%] gap-8 ">
               {produkMenu.map((item) => (
                 <ProductCard
                   key={item.id}

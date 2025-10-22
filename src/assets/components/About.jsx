@@ -3,9 +3,9 @@ import { Leaf, HeartIcon } from "lucide-react";
 const About = () => {
   return (
     <>
-      <section id="tentang" className="md:min-h-screen scroll-mt-[150px]">
+      <section id="tentang" className=" my-25 scroll-mt-[150px]">
         <div className="container mx-auto">
-          <div className="flex flex-col items-center justify-center ">
+          <div className="flex flex-col items-center justify-center">
             <div className="flex items-center gap-6 my-6">
               <div className="bg-[#f5faf3] p-3 rounded-4xl">
                 <Leaf color="green" />
