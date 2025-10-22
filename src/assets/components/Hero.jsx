@@ -2,7 +2,7 @@ import { MessageCircle, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="beranda" className="pt-[130px] md:pt-[250px] min-h-screen">
+    <section id="beranda" className="pt-[130px] md:pt-[250px] md:min-h-screen">
       <div className="container mx-auto px-4 md:px-0">
         <div className="flex items-center">
           <div>

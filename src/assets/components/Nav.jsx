@@ -47,7 +47,7 @@ const Nav = () => {
                     fill="none"
                   />
                 </svg>
-                <p className="text-white font-bold">Order via whatsapp</p>
+                <p className="text-white font-bold">Pesan via whatsapp</p>
               </a>
             </li>
           </ul>
