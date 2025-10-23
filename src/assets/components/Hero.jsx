@@ -1,11 +1,17 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import { MessageCircle, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
     <section id="beranda" className="pt-[130px] md:pt-[250px] md:min-h-screen">
       <div className="container mx-auto px-4 md:px-0">
-        <div className="flex items-center">
-          <div>
+        <div className="flex items-center gap-10">
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <div className="flex md:items-center font-extralight bg-[#EDF5E9] w-fit p-2 rounded-full mb-10">
               <Sparkles className="w-4 h-4 mr-2" />
               <p>Buatan Anak Bangsa</p>
@@ -19,18 +25,23 @@ const Hero = () => {
               Kami percaya yang sederhana bisa jadi istimewa. Coba matcha buatan
               UMKM, rasanya beda karena ada cinta di setiap sajian.
             </p>
-            <button className="bg-[#98c383] p-4 rounded- flex gap-3 rounded-full">
+            <button className="bg-[#98c383] p-4 rounded- flex gap-3 rounded-full cursor-pointer shadow-lg hover:bg-[#98c383]/85">
               <MessageCircle color="white" />
               <p className="text-white font-bold">Pesan via whatsapp</p>
             </button>
-          </div>
-          <div className="hidden md:block">
+          </motion.div>
+          <motion.div
+            className="hidden md:block"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <img
-              src="matcha-latte.jpg"
-              alt="matcha-latte"
-              className="rounded-4xl"
+              src="ROMANSA.webp"
+              alt="logo"
+              className="rounded-4xl w-[300px]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

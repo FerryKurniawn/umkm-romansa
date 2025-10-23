@@ -43,8 +43,8 @@ const Testimonial = () => {
             Nggak cuma enak, tapi juga bikin hati adem. Yuk intip kata mereka!
           </h3>
         </div>
-        <div className="flex justify-center mt-20">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="flex justify-center md:mt-20 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {testimonials.map((item) => (
               <TestimonialCard
                 key={item.id}
