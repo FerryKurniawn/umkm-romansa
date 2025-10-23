@@ -4,11 +4,33 @@ import { Leaf, MessageCircle } from "lucide-react";
 
 const Produk = () => {
   const produkMenu = [
-    { id: 1, name: "Matcha Latte", image: "matcha-latte.webp", price: 15_000 },
-    { id: 2, name: "Matcha Coklat", image: "macho.webp", price: 18_000 },
-    { id: 3, name: "Matcha Pisang", image: "chasang.webp", price: 20_000 },
+    {
+      id: 1,
+      name: "Matcha Latte",
+      image: "matcha-latte.webp",
+      price: 15_000,
+      description:
+        "Matcha Latte itu enak banget, deh! Rasanya lembut, ada sentuhan pahit dari matcha yang dikombinasikan dengan susu yang creamy. Cocok buat kamu yang suka minuman tenang, pas banget buat ngopi santai pagi atau sore.",
+    },
+    {
+      id: 2,
+      name: "Matcha Coklat",
+      image: "macho.webp",
+      price: 18_000,
+      description:
+        "Kalau kamu suka matcha dan coklat, kamu bakal suka banget yang satu ini! Matcha yang sedikit pahit ketemu dengan manisnya coklat, jadi rasanya balance banget. Nikmat banget buat yang pengen coba sesuatu yang beda dari biasanya.",
+    },
+    {
+      id: 3,
+      name: "Matcha Pisang",
+      image: "chasang.webp",
+      price: 20_000,
+      description:
+        "Matcha ketemu pisang yang manis dan lembut. Rasanya fresh dan sehat, cocok banget buat kamu yang cari camilan yang nggak cuma enak, tapi juga nggak bikin bersalah.",
+    },
   ];
-  const ProductCard = ({ name, price, image }) => {
+  const ProductCard = ({ name, price, image, description }) => {
+    console.log(image.toLocaleString());
     return (
       <>
         <div className="p-2.5 m-2.5 flex mx-auto flex-col shadow-lg bg-white w-[80%] md:w-full">
@@ -21,16 +43,27 @@ const Produk = () => {
               className="w-full rounded-2xl"
             />
           </div>
-          <div className="pl-4 ">
-            <h1 className="text-xl font-bold mt-6">{name}</h1>
-            <p>Harga: Rp.{price.toLocaleString()} </p>
+          <div className="pl-4 flex flex-col justify-between gap-10">
+            <h1 className="text-2xl font-bold mt-6">{name}</h1>
+            <p className="text-base font-light max-h-[100px] mb-10">
+              {description}
+            </p>
+            <p className="font-medium text-lg">
+              Harga: Rp.{price.toLocaleString()}{" "}
+            </p>
             <div
               onClick={() => {
-                window.open("https://wa.me/6285252687939"), "_blank";
+                window.open(
+                  `https://wa.me/6285183172802?text=Halo%20Bang%20Mau%20Pesan%20${name}`,
+                  "_blank"
+                );
               }}
               className="flex gap-2 bg-[#98c383] w-fit items-center shadow-lg mx-auto p-3 my-6 rounded-full cursor-pointer hover:bg-[#98c383]/90"
             >
-              <MessageCircle color="white" />
+              <MessageCircle
+                color="
+              white"
+              />
               <p className="text-white">Pesan Sekarang</p>
             </div>
           </div>
@@ -58,6 +91,7 @@ const Produk = () => {
                   image={item.image}
                   name={item.name}
                   price={item.price}
+                  description={item.description}
                 />
               ))}
             </div>

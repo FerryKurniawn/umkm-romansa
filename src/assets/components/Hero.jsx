@@ -25,7 +25,15 @@ const Hero = () => {
               Kami percaya yang sederhana bisa jadi istimewa. Coba matcha buatan
               UMKM, rasanya beda karena ada cinta di setiap sajian.
             </p>
-            <button className="bg-[#98c383] p-4 rounded- flex gap-3 rounded-full cursor-pointer shadow-lg hover:bg-[#98c383]/85">
+            <button
+              onClick={() => {
+                window.open(
+                  "https://wa.me/6285183172802?text=Halo%20Bang%20Mau%20Pesan",
+                  "_blank"
+                );
+              }}
+              className="bg-[#98c383] p-4 rounded- flex gap-3 rounded-full cursor-pointer shadow-lg hover:bg-[#98c383]/85"
+            >
               <MessageCircle color="white" />
               <p className="text-white font-bold">Pesan via whatsapp</p>
             </button>
