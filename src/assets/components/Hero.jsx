@@ -5,7 +5,7 @@ import { MessageCircle, Sparkles } from "lucide-react";
 const Hero = () => {
   return (
     <section id="beranda" className="pt-[130px] md:pt-[250px] md:min-h-screen">
-      <div className="container mx-auto px-4 md:px-0">
+      <div className="container mx-auto px-4 md:px-[50px]">
         <div className="flex items-center gap-10">
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
