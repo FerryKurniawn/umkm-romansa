@@ -28,7 +28,7 @@ const Hero = () => {
             <button
               onClick={() => {
                 window.open(
-                  "https://wa.me/6285183172802?text=Halo%20Bang%20Mau%20Pesan",
+                  "https://wa.me/62895328266910?text=Halo%20Bang%20Mau%20Pesan",
                   "_blank"
                 );
               }}
