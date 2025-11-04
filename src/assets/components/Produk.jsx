@@ -10,7 +10,7 @@ const Produk = () => {
       image: "matcha-latte.webp",
       price: 15_000,
       description:
-        "Matcha Latte itu enak banget, deh! Rasanya lembut, ada sentuhan pahit dari matcha yang dikombinasikan dengan susu yang creamy. Cocok buat kamu yang suka minuman tenang, pas banget buat ngopi santai pagi atau sore.",
+        "Matcha klasik berpadu susu murni. Lembut, creamy, dan autentik di setiap tegukan.",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Produk = () => {
       image: "macho.webp",
       price: 18_000,
       description:
-        "Kalau kamu suka matcha dan coklat, kamu bakal suka banget yang satu ini! Matcha yang sedikit pahit ketemu dengan manisnya coklat, jadi rasanya balance banget. Nikmat banget buat yang pengen coba sesuatu yang beda dari biasanya.",
+        "Rasa kuat matcha berpadu manisnya coklat dan lembutnya susu. Creamy, manis, dan tetap khas matcha.",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Produk = () => {
       image: "chasang.webp",
       price: 20_000,
       description:
-        "Matcha ketemu pisang yang manis dan lembut. Rasanya fresh dan sehat, cocok banget buat kamu yang cari camilan yang nggak cuma enak, tapi juga nggak bikin bersalah.",
+        "Kombinasi segar matcha dan pisang. Manis alami, unik, dan menenangkan.",
     },
   ];
   const ProductCard = ({ name, price, image, description }) => {
@@ -54,7 +54,7 @@ const Produk = () => {
             <div
               onClick={() => {
                 window.open(
-                  `https://wa.me/6285183172802?text=Halo%20Bang%20Mau%20Pesan%20${name}`,
+                  `https://wa.me/62895328266910?text=Halo%20Bang%20Mau%20Pesan%20${name}`,
                   "_blank"
                 );
               }}
