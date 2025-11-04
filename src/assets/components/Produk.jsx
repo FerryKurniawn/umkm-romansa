@@ -45,7 +45,7 @@ const Produk = () => {
           </div>
           <div className="pl-4 flex flex-col justify-between gap-10">
             <h1 className="text-2xl font-bold mt-6">{name}</h1>
-            <p className="text-base font-light max-h-[100px] mb-10">
+            <p className="text-base font-light mb-10 min-h-20 max-h-[100px] overflow-hidden line-clamp-4">
               {description}
             </p>
             <p className="font-medium text-lg">
